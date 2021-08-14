@@ -13,14 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class Controller {
 
-    /*@GetMapping("/html")
-    String getHtml(Model model) {
-
-        model.addAttribute("texto", "Olá Mundo !!!");
-        return "webcontent";
-
-    }*/
-
     @RequestMapping(value = "/html",
             method = RequestMethod.GET,
             produces = MediaType.TEXT_HTML_VALUE)
